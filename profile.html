@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <div class="card-content">
+            <header class="profile-header">
+                <figure class="avatar-container">
+                    <img 
+                        src="/profile.JPG" 
+                        alt="Profile picture" 
+                        class="avatar"
+                        data-testid="test-user-avatar"
+                    >
+                </figure>
+                
+                <div class="profile-info">
+                    <h2 class="user-name" data-testid="test-user-name">Thebigname</h2>
+                    <p class="user-bio" data-testid="test-user-bio">
+                        Creative developer and design enthusiast with a passion for building accessible and beautiful web experiences. 
+                        Always learning, always creating, non stop.
+                    </p>
+                    <div class="user-time" ">
+                         <h2>Current Time:</h2>
+                        <p data-testid="test-user-time"></p>
+                        <p>milliseconds (ms)</p>
+                    </div>
+                </div>
+            </header>
+
+            <nav aria-label="Social media links">
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li>
+                        <a 
+                            href="https://twitter.com/OlashilePatrick" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter"
+                        >
+                         Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://github.com/thebigname" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                            
+                        >
+                            Github
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://linkedin.com/in/PatrickGodspower" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin"
+                            aria-label="Visit LinkedIn profile"
+                        > Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://instagram/gphaircut_" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-instagram"
+
+                        >
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="interests-section">
+                <section class="interest-group hobbies">
+                    <h3 class="interest-title">Hobbies
+                    </h3>
+                    <ul class="interest-list" data-testid="test-user-hobbies">
+                        <li class="interest-item">Writing code</li>
+                        <li class="interest-item">Reading business books</li>
+                        <li class="interest-item">sightseeing</li>
+                        <li class="interest-item">playing football</li>
+                        <li class="interest-item">meeting new friends</li>
+                        <li class="interest-item">eating good foods</li>
+                    </ul>
+                </section>
+
+                <section class="interest-group dislikes">
+                    <h3 class="interest-title"> Dislikes
+                    </h3>
+                    <ul class="interest-list" data-testid="test-user-dislikes">
+                        <li class="interest-item">Traffic jams</li>
+                        <li class="interest-item">Poor documentation</li>
+                        <li class="interest-item">Cold coffee</li>
+                        <li class="interest-item">Loud chewing</li>
+                        <li class="interest-item">Slow internet</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+    <script src="profile.js"></script>
+
+  </body>
+  
+</html>
