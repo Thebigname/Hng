@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Thebigname</title>
   </head>
   <body>
-    <article class="profile-card" data-testid="test-profile-card">
+     <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Thebigname</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="page-content">
+        <article class="profile-card" data-testid="test-profile-card">
+        
         <div class="card-content">
             <header class="profile-header">
                 <figure class="avatar-container">
@@ -112,6 +124,8 @@
             </div>
         </div>
     </article>
+    </main>
+    
     <script src="script.js"></script>
 
   </body>
