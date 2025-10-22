@@ -27,6 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 64px;
+    position: relative;
 }
 
 .nav-logo {
@@ -50,7 +51,6 @@ body {
 }
 
 .nav-link {
-    display: inline-block;
     padding: 8px 16px;
     color: #4a5568;
     text-decoration: none;
@@ -73,6 +73,88 @@ body {
     outline: 2px solid #667eea;
     outline-offset: 2px;
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #667eea;
+    transition: transform 0.3s ease;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.menu-toggle::before {
+    content: '☰';
+}
+
+.menu-toggle.active {
+    transform: rotate(90deg);
+}
+
+.menu-toggle.active::before {
+    content: '✕';
+}
+
+/* Mobile & Tablet Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 0;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid #edf2f7;
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 16px 20px;
+        border-radius: 0;
+    }
+
+    .nav-link:hover {
+        background: #f7fafc;
+    }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav-container {
+        padding: 0 30px;
+    }
+    
+    .nav-link {
+        padding: 18px 30px;
+        font-size: 1.05rem;
+    }
+
 .page-content {
     padding: 40px 20px;
     display: flex;

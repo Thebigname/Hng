@@ -1,4 +1,3 @@
-// Form Validation for Contact Page
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     
